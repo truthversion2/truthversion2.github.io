@@ -2,32 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Awesome Website</title>
+    <title>A Wonderful World of Cheese</title>
     <style>
+        /* This sets the font and background for the whole page */
         body {
-            font-family: sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Georgia', serif;
+            background-color: #FFF8E1; /* A creamy background color */
+            color: #4E342E; /* A dark brown for text */
+            line-height: 1.6;
+        }
+
+        /* This is a container to hold our main content and center it */
+        .container {
+            max-width: 800px; /* Sets a maximum width for the content */
+            margin: 20px auto; /* Centers the container on the page */
+            padding: 25px;
+            background-color: #FFFFFF; /* A white background for the content area */
+            border: 1px solid #D7CCC8;
+            border-radius: 8px; /* Gives the container rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+        }
+
+        /* Styling for the main headings */
+        h1, h2 {
             text-align: center;
-            margin-top: 50px;
+            color: #5D4037; /* A richer brown for headings */
         }
-        h1 {
-            color: #333;
+
+        /* This styles each individual cheese "card" */
+        .cheese-card {
+            border-top: 2px solid #EFEBE9;
+            padding-top: 20px;
+            margin-top: 20px;
         }
-        p {
-            color: #555;
-            font-size: 1.2em;
+
+        /* Styling for the cheese names */
+        .cheese-card h3 {
+            margin-top: 0;
+            color: #BF360C; /* An orange/red color for emphasis */
         }
+
+        /* Makes sure images don't overflow their container */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px; /* Slightly rounded corners for images */
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Website!</h1>
+    <div class="container">
 
-    <p>This is my first page on the internet, hosted with GitHub Pages.</p>
+        <h1>A Wonderful World of Cheese</h1>
+        <p>Welcome to a page celebrating one of the world's most delicious foods: cheese! From hard and crumbly to soft and creamy, there's a cheese out there for everyone. Here are a few famous examples.</p>
 
-    <p>I can put anything I want here, like a link to my GitHub profile!</p>
+        <div class="cheese-card">
+            <h3>Cheddar</h3>
+            <img src="https://images.unsplash.com/photo-1618164436241-447520f823a4?w=800" alt="A block of sharp cheddar cheese">
+            <p>
+                <strong>Origin:</strong> Somerset, England
+            </p>
+            <p>
+                A relatively hard, off-white (or orange if colourings are added) cheese. Originating in the English village of Cheddar, it's now the most popular type of cheese in the UK and is produced all over the world. Its flavour sharpens over time as it matures.
+            </p>
+        </div>
 
-    <a href="https://github.com/your-username">Visit my GitHub</a>
+        <div class="cheese-card">
+            <h3>Brie de Meaux</h3>
+            <img src="https://images.unsplash.com/photo-1598515152559-a281896173a7?w=800" alt="A wheel of soft Brie cheese">
+            <p>
+                <strong>Origin:</strong> Meaux, France
+            </p>
+            <p>
+                Known as the "Queen of Cheeses", Brie is a soft cow's-milk cheese with a gentle, creamy flavour. It has a bloomy white rind of mould which is considered a delicacy and is perfectly edible. It's perfect on a cracker with grapes!
+            </p>
+        </div>
+
+        <div class="cheese-card">
+            <h3>Gorgonzola</h3>
+            <img src="https://images.unsplash.com/photo-1627888639598-92e09880a4a6?w=800" alt="A wedge of blue-veined Gorgonzola cheese">
+            <p>
+                <strong>Origin:</strong> Gorgonzola, Italy
+            </p>
+            <p>
+                This is a veined Italian blue cheese, made from unskimmed cow's milk. It can be buttery or firm, crumbly and quite salty, with a "bite" from its blue veining. It is often eaten melted into risotto or served with polenta.
+            </p>
+        </div>
+
+    </div>
 
 </body>
 </html>
